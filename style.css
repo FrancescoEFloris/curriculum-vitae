@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #2b2b2b;
+    line-height: 1.5;
+    padding: 40px 20px;
+}
+
+/* Contenitore Principale */
+.resume-container {
+    display: flex;
+    max-width: 950px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    min-height: 1100px;
+    position: relative;
+}
+
+/* Colonna Sinistra */
+.sidebar {
+    width: 35%;
+    background-color: #fbd643;
+    padding: 50px 35px 200px 35px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+header h1 {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.job-title {
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.sidebar .section {
+    margin-bottom: 40px;
+}
+
+.sidebar h2 {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #1a1a1a;
+}
+
+.info-item {
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+.info-item p {
+    margin-bottom: 3px;
+}
+
+.info-item a {
+    color: inherit;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.info-item a:hover {
+    color: rgb(0, 148, 185);
+}
+
+.email-link {
+    word-break: break-all;
+}
+
+/* Competenze e Lingue */
+.skills-list,
+.languages-list {
+    list-style-type: none;
+}
+
+.skills-list li,
+.languages-list li {
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+.skills-list span,
+.languages-list span {
+    font-size: 0.85em;
+    opacity: 50%;
+    margin-left: 4px;
+}
+
+/* Colonna Destra */
+.content {
+    width: 65%;
+    padding: 50px 50px 200px 50px;
+    background-color: #ffffff;
+}
+
+.content .section {
+    margin-bottom: 40px;
+}
+
+.main-heading {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 1.6rem;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Istruzione e Formazione */
+.education-item {
+    margin-bottom: 25px;
+}
+
+.education-item h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #2b2b2b;
+}
+
+.education-item .date {
+    font-size: 0.8rem;
+    color: #888;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.education-item p {
+    margin-bottom: 0;
+}
+/* Privacy */
+.privacy-clause {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    z-index: 10;
+}
+
+.privacy-clause p {
+    font-size: 0.75rem;
+    color: #444;
+    font-style: italic;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .resume-container {
+        flex-direction: column;
+    }
+
+    .sidebar,
+    .content {
+        width: 100%;
+        padding: 40px 20px;
+    }
+    
+    .privacy-clause {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        transform: none;
+        margin: 20px auto 30px auto;
+    }
+}
